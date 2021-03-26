@@ -23,6 +23,8 @@ const auxConfigs = new ConfigService();
     GraphQLModule.forRoot({
       include: [GraphqlLayerModule],
       autoSchemaFile: 'schema.gql',
+      introspection: true,
+      playground: true,
     }),
   ],
 })

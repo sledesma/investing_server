@@ -30,6 +30,8 @@ AppModule = __decorate([
             graphql_1.GraphQLModule.forRoot({
                 include: [graphql_layer_module_1.GraphqlLayerModule],
                 autoSchemaFile: 'schema.gql',
+                introspection: true,
+                playground: true,
             }),
         ],
     })
