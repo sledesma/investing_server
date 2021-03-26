@@ -1,0 +1,17 @@
+Diagramas / diseños importantes para diseñar cada capa:
+
+
+Capa de Datos
+> Diagrama E-R
+
+Capa de Procesos
+> Diagrama de flujo por proceso
+> Diagrama de E/S / Representar dependencias
+
+Capa de GraphQl (Presentación)
+> Lecturas de datos
+* Consulta / Objeto a devolver
+> Escrituras de datos
+* Consulta / Dato a cambiar
+
+Capa común

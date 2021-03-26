@@ -1,0 +1,8 @@
+1. Middlewares
+2. Guards
+3. Interceptors
+4. Pipes
+5. Route Handlers
+6. Services
+7. Inteceptors (post-request)
+9. Exception

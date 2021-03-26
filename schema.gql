@@ -1,0 +1,48 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AccionObject {
+  simbolo: String!
+  mercado: String!
+  _active: Boolean!
+  created: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type HistorialObject {
+  id: String!
+  accion_id: String
+  fecha: DateTime
+  apertura: Float
+  maximo: Float
+  minimo: Float
+  cierre: Float
+  volumen: Float
+  _active: Boolean
+  created: DateTime
+}
+
+type ReporteGeneralObject {
+  auxiliarCompra: Float!
+  congruenciaCompra: Boolean!
+  auxiliarVenta: Float!
+  congruenciaVenta: Boolean!
+  mediaMovil: Float!
+  senialCompraVenta: String!
+  indicioCambio: String!
+}
+
+type Query {
+  allActions: [AccionObject!]!
+  getAll: [HistorialObject!]!
+  buildReport(senial_cv_previa_previa: String!, senial_cv_previa: String!, historial_id: String!): ReporteGeneralObject!
+}
+
+type Mutation {
+  createAction(mercado: String!, simbolo: String!): AccionObject!
+}
